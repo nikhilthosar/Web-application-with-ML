@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil's DS-AI Studio</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='favicon.ico')}}">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100&family=Source+Code+Pro:wght@200&display=swap');
+
+    body {
+      margin: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+     
+    .text {
+      padding-top: 200px;
+    }
+
+    .text img{
+      width: 100%;
+    }
+
+    .button {
+      padding: 0%;
+    }
+
+    .button a img:hover {
+      background: #5859ca;
+      padding: 0%;
+      cursor: pointer;
+    }
+
+    .text {
+      margin-left: 20px;
+      margin-right: 20px;
+      justify-content: center;
+    }
+
+    #leftbox {
+      float: left;
+      width: 48%;
+      border: white;
+      font-weight: 580;
+    }
+
+    #rightbox {
+      float: right;
+      width: 48%;
+      border:white;
+      font-weight: 580;
+    }
+
+  @media screen and (max-width: 800px) {
+   
+  #leftbox {
+      width: 98%;
+      border: white;
+      font-weight: 580;
+    }
+
+    #rightbox {
+      width: 98%;
+      border: white;
+      font-weight: 580;
+    }
+
+
+}
+
+  </style>
+</head>
+
+<body>
+
+ 
+  <div class="main">
+    <div class="devinfo">
+      <div class="start">Hey, I'm</div>
+      <div> <span class="name">Nikhil </span> <span class="surname">Thosar</span></div>
+      <div class="info">Welcome to my creative space for
+        <br> Data Science| AI | Software Development
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="media">Let's Connect</div>
+      <div class="button">
+        <a href='https://www.instagram.com/thenikhilthosar/'><img src= "{{url_for('static',filename='InstaIcon.png')}}"></a>
+        <a href='https://www.linkedin.com/in/nikhil-thosar-17b457128/'><img src="{{url_for('static',filename='LinkedInIcon.png')}}"></a>
+      </div>
+    </div>
+    <div class="text">
+      <img src="https://source.unsplash.com/random/900x250/?coding" alt="Image">
+      <div id="leftbox">
+        <h2>Artificial Intelligence and Future</h2>
+        <p>Artificial intelligence (AI) is already a part of everyday life, from wearable health technology like smart
+          watches and voice assistants to self-driving cars and chat bots. And this trend is only expected to continue
+          growing. In fact, according to the Brookings Institution, in just over a decade, AI will outperform humans in
+          a variety of tasks, from writing essays to retail work. The future of AI will feature a shift of traditionally
+          human-driven operations to work performed by automated computers.
+
+          The predicted impact of artificial intelligence on people, business, and industry in coming years is profound,
+          and while some may worry about the dangers of over-automation, there are actually many positive social and
+          economic benefits to AI. If you’re considering a career in programming or other computer professions, you’ll
+          be in a position to use AI to potentially solve a variety of human problems across sectors, including
+          humanitarian crises, healthcare needs, and quality control in areas such as manufacturing or product
+          development.
+        </p>
+      </div>
+      <div id="rightbox">
+        <br>
+        <br>
+        <br>
+        <p>According to a PricewaterhouseCoopers survey, 20% of organizations plan to implement AI in their enterprise
+          in 2019. The implications of this trend are significant, as they imply that AI is no longer confined to
+          research or computer labs. Instead, AI will impact offices, hospitals, and consumer products. Machine
+          learning, biometrics, and prescriptive analytics are a few ways professionals apply AI in industrial settings,
+          business offices, and laboratories.
+
+          Businesses use machine learning — the ability of computer programs to refine their abilities based on pattern
+          recognition — to help interpret and analyze a vast amount of customer data. As the future of AI becomes more
+          accurate and efficient, companies use these insights to create more personalized content for their customers
+          and audiences. Additionally, AI can determine which marketing channels are performing best based on how
+          potential customers engage with content. Then, the AI can automatically allocate additional marketing dollars
+          to the most viable audiences.</p>
+      </div>
+    </div>
+  </div>
+</body>
+<div class = 'proj'>
+  <h2>Projects</h2>
+  <a href="{{url_for('project')}}"> 1. Diabetes Diagnosis Machine Learning Model</a>
+</html>
